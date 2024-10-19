@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 2%;
+  height: 100vh;
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 2%;
+  overflow:scroll;
+  overflow-x: hidden;
+}
+
+.card {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.outside
+{
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.catImg
+{
+  width: 300px;
+  height: auto;
+}
+.load{
+  position: fixed;
+  bottom: 5%;
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
